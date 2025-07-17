@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesión - AFUCO</title>
+    <link rel="stylesheet" href="../css/estilos-plantilla.css">
+    <link rel="stylesheet" href="../css/estilos-inicio-sesion.css">
+    <script src="../js/index.js"></script>
+    <script src="https://kit.fontawesome.com/c72e42ebff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="" alt="">
+                <h1><a href="../index.html">AFUCO</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/proximante.html">Sobre Nosotros</a></li>
+                <li><a href="../html/proximante.html">Socios</a></li>
+                <li><a href="../html/proximante.html">Mutual</a></li>
+                <div class="logIn">
+                    <a href="../html/inicio-sesion.html">
+                        <button type="" class="boton-logIn"><h1>Iniciar Sesion</h1></button>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-logIn">
+            <div class="contenedor-logIn">
+                <h1 class="titulo-logIn">Iniciar Sesión</h1>
+                <p class="texto-logIn">Por favor, ingresa tu correo electrónico y contraseña para acceder a tu cuenta.</p>
+                <form action="../html/proximante.html" method="get" class="formulario-logIn">
+                    <div class="campo-logIn">
+                        <label for="email">Correo Electrónico:</label>
+                        <input placeholder="ejemplo@gmail.com" type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Por favor, ingresa un correo electrónico válido">
+                    </div>
+                    <div class="campo-logIn">
+                        <label for="password">Contraseña:</label>
+                        <input placeholder="Contraseña" type="password" id="password" name="password" required pattern=".{5,}" title="Debe tener al menos 8 caracteres">
+                    </div>
+                    <!-- <div class="campo-logIn">
+                        <label for="remember-me">
+                            <input type="checkbox" id="remember-me" name="remember-me">
+                            Recordarme
+                        </label>
+                    </div> -->
+                    <div class="campo-logIn">
+                        <a href="../html/proximante.html" class="inicio-sesion-logIn">
+                            <button class="boton-aceptar-logIn">Iniciar Sesión</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <!-- Contacto -->
+            <div class="seccion-footer">
+                <h2>Contacto</h2>
+                <p><strong class="texto-resaltado-rojo">Dirección:</strong> Calle Ficticia 123, Villa María</p>
+                <p><strong class="texto-resaltado-rojo">Teléfono:</strong> +353 XXX-XXXX</p>
+                <p><strong class="texto-resaltado-rojo">Email:</strong> AFUCO@gmail.com</p>
+            </div>
+            <!-- Seguidos Redes-->
+            <div class="seccion-footer redes">
+                <h2>Síguenos</h2>
+                <div class="enlaces-redes">
+                    <a href="https://www.instagram.com/afuco_vm/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/afuco.villamaria" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://afuco.com.ar/" title="AFUCO"><i class="fa-solid fa-house"></i></a>
+                </div>
+                <p></p>
+            </div>
+            <!-- Legal -->
+            <div class="seccion-footer">
+                <h2>Legal</h2>
+                <p>© 2025 Mutual. Todos los derechos reservados.</p>
+                <p><a href="">Política de Privacidad</a> | <a href="">Términos de Servicio</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

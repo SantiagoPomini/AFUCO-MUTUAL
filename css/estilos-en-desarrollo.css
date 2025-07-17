@@ -1,0 +1,64 @@
+.seccion-mantenimiento {
+    width: 100%;
+    min-height: calc(100vh - var(--header-height, 75px) - var(--footer-height, 182px));
+    padding-bottom: 40px;
+    background-color: #f0f0f0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-mantenimiento .contenedor-mantenimiento {
+    width: 80%;
+    height: 100%;
+    padding: 140px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-mantenimiento .titulo-mantenimiento {
+    font-size: 3rem;
+    color: #333;
+    /* margin-bottom: 20px; */
+    text-align: center;
+}
+
+.contenedor-mantenimiento .texto-mantenimiento {
+    font-size: 1.5rem;
+    color: #666;
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+.contenedor-mantenimiento .contenedor-boton-mantenimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-boton-mantenimiento .boton-volver {
+    padding: 5px 20px;
+    font-size: 1.4rem;
+    color: #f8f9fa;
+    background-color: #B91C1C;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contenedor-boton-mantenimiento .boton-volver:hover {
+    transform: scale(1.05);
+    transition: transform .3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnero - AFUCO</title>
+    <link rel="stylesheet" href="../css/estilos-plantilla.css">
+    <link rel="stylesheet" href="../css/estilos-turnero-jugadores.css">
+    <!-- <link rel="stylesheet" href="../../turno.css"> -->
+    <!-- <link rel="icon" href="../img/AFUCO_Logo_grande_rojo.ico"/> -->
+    <!-- <script src="../js/turnero.js" defer></script> -->
+    <script src="https://kit.fontawesome.com/c72e42ebff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="" alt="">
+                <h1><a href="../index.html">AFUCO</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/proximante.html">Sobre Nosotros</a></li>
+                <li><a href="../html/proximante.html">Socios</a></li>
+                <li><a href="../html/proximante.html">Mutual</a></li>
+                <div class="logIn">
+                    <a href="../html/inicio-sesion.html">
+                        <button type="" class="boton-logIn">
+                            <h1>Iniciar Sesion</h1>
+                        </button>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-turnero">
+            <div class="contenedor-turnero">
+
+                <!-- Texto Principal Turnero -->
+                <!-- <h1 class="titulo-turnero">Turnero <strong class="texto-resaltado-rojo">AFUCO</strong> - Carga de Jugadores</h1> -->
+                <h1 class="titulo-turnero">Carga de <strong class="texto-resaltado-rojo">Jugadores</strong></h1>
+
+                <!-- <h3 class="subtitulo-turnero">Carga de Turnos</h3> -->
+
+                <!-- Turnero -->
+                <div class="contenedor-formulario">
+
+
+                    <!-- Formulario Turnero -->
+                    <form class="formulario-turno" id="formularioTurno">
+
+                        <div class="fechas-disponibles">
+                            <h2 class="titulo-fechas">Fechas Disponibles</h2>
+
+                            <h2>Reservar un horario</h2>
+
+                            <label>
+                                Día:
+                                <select id="selectorDia">
+                                    <option value="-- Seleccionar día --" disabled selected>-- Seleccionar día --
+                                    </option>
+                                    <option value="Lunes">Lunes</option>
+                                    <option value="Martes">Martes</option>
+                                    <option value="Miercoles">Miércoles</option>
+                                    <option value="Jueves">Jueves</option>
+                                    <option value="Viernes">Viernes</option>
+                                </select>
+                            </label>
+
+                            <div id="listaHorarios"></div>
+                            <!-- <button type="button" id="reservarBtn">Reservar horario</button> -->
+
+                            <!-- ESTE SI -->
+                            <!-- <div class="contenedor-fechas-horarios">
+                                <div class="fechas-dias">
+                                    <select name="" id="selectorDia">
+                                        <option value="Lunes">Lunes</option>
+                                        <option value="Martes">Martes</option>
+                                        <option value="Miercoles">Miercoles</option>
+                                        <option value="Jueves">Jueves</option>
+                                        <option value="Viernes">Viernes</option>
+                                    </select>
+                                </div>
+                                <div id="listaHorarios" class="horarios-del-dia">
+                                    
+                                </div>
+                            </div> -->
+                            <!-- FIN ESTE SI -->
+
+
+                            <!-- <div class="contenedor-seleccion-horario">
+                                <div class="horario-division">
+                                    <label>Inicio:
+                                        <input type="time" id="horaInicio">
+                                    </label>
+                                </div>
+                                
+                                <div class="horario-division">
+                                    <label>Fin:
+                                        <input type="time" id="horaFin">
+                                    </label>
+                                </div>
+                                
+                                <div class="horario-division">
+                                    <label>Intervalo (minutos):
+                                        <input type="number" id="intervalo" value="30">
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="contenedor-botones-horario">
+                                <button type="button" id="generarHorarios">Generar Horarios</button>
+                                <button type="button" id="reiniciarHorarios">🔄 Reiniciar Horarios</button>
+                                <button type="button" id="enviarHorario">Enviar Reserva</button>
+                            </div>
+                            
+                            <div id="contenedorHorarios"></div> -->
+                        </div>
+
+                        <div class="formulario-selecionable">
+
+                            <!-- Division Nº0 -->
+                            <div class="formulario-division">
+                                <!-- Opcion Nº1 -->
+                                <div class="opciones opcion-solitaria">
+                                    <label for="dni">DNI:</label>
+                                    <div class="confirmar-dni">
+                                        <input type="text" class="dni" placeholder="DNI" required>
+                                        <button class="check-confimacion" type="button" id="buscarBtn"><i
+                                                class="fa-solid fa-circle-check"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Division Nº1 -->
+                            <div class="formulario-division">
+
+                                <!-- Opcion Nº2 -->
+                                <div class="opciones">
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" class="nombre" value="" placeholder="Nombre Completo" required>
+                                </div>
+
+                                <!-- Opcion Nº3 -->
+                                <div class="opciones">
+                                    <label for="apellido">Apellido:</label>
+                                    <input type="text" class="apellido" placeholder="Apellido/s" required>
+                                </div>
+                            </div>
+
+                            <!-- Division Nº2 -->
+                            <div class="formulario-division">
+
+                                <!-- Opcion Nº4 -->
+                                <div class="opciones">
+                                    <label for="telefono">Teléfono:</label>
+                                    <input type="tel" class="telefono" placeholder="Teléfono" required>
+                                </div>
+
+                                <!-- Opcion Nº5 -->
+                                <div class="opciones">
+                                    <label for="Localidad">Localidad:</label>
+                                    <input type="text" class="localidad" placeholder="localidad" required>
+                                </div>
+                            </div>
+
+                            <!-- Division Nº3 -->
+                            <div class="formulario-division">
+                                <!-- Opcion Nº6 -->
+                                <div class="opciones opcion-solitaria">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="email" placeholder="Email" aria-required="false">
+                                </div>
+                            </div>
+
+
+                            <!-- Division Nº4 -->
+                            <div class="formulario-division">
+
+                                <!-- Opcion Nº7 -->
+                                <div class="opciones">
+                                    <label for="motivo">Motivo:</label>
+                                    <select class="motivo" required>
+                                        <option value="" disabled selected>Seleccione un motivo</option>
+                                        <option value="Apto Medico">Apto Medico</option>
+                                        <!-- <option value="Emmac">Emmac</option> -->
+                                        <option value="Soporte al Cliente">Soporte al Cliente</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
+                                </div>
+
+                                <!-- Opcion Nº9 -->
+                                <div class="opciones opcion-hora">
+                                    <label for="fecha">Nacimiento:</label>
+                                    <input type="date" class="nacimiento" required>
+                                </div>
+                            </div>
+
+                            <!-- Opcion Nº8 -->
+                            <!-- <label for="fecha">Fecha del Turno:</label>
+                                <input type="date" class="fecha" required> -->
+
+                            <button type="submit" class="btn-enviar-turno">Enviar Turno</button>
+                        </div>
+
+                        <!-- <button type="submit" class="btn-enviar-turno" id="reservarBtn">Enviar Turno</button> -->
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <!-- Contacto -->
+            <div class="seccion-footer">
+                <h2>Contacto</h2>
+                <p><strong class="texto-resaltado-rojo">Dirección:</strong> Calle Ficticia 123, Villa María</p>
+                <p><strong class="texto-resaltado-rojo">Teléfono:</strong> +353 XXX-XXXX</p>
+                <p><strong class="texto-resaltado-rojo">Email:</strong> AFUCO@gmail.com</p>
+            </div>
+            <!-- Seguidos Redes-->
+            <div class="seccion-footer redes">
+                <h2>Síguenos</h2>
+                <div class="enlaces-redes">
+                    <a href="https://www.instagram.com/afuco_vm/" title="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/afuco.villamaria" title="Facebook"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="http://afuco.com.ar/" title="AFUCO"><i class="fa-solid fa-house"></i></a>
+                </div>
+                <p></p>
+            </div>
+            <!-- Legal -->
+            <div class="seccion-footer">
+                <h2>Legal</h2>
+                <p>© 2025 Mutual. Todos los derechos reservados.</p>
+                <p><a href="">Política de Privacidad</a> | <a href="">Términos de Servicio</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/turnero-jugadores.js"></script>
+
+</html>

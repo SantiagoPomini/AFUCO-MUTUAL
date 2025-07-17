@@ -1,0 +1,102 @@
+.seccion-logIn{
+    width: 100%;
+    min-height: calc(100vh - var(--header-height, 75px) - var(--footer-height, 182px));
+    padding-bottom: 40px;
+    background-color: #f0f0f0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-logIn {
+    width: 30%;
+    height: 500px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+
+    /* gap: 20px; */
+
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-logIn .titulo-logIn {
+    width: 100%;
+    padding: 20px 0;
+
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+.contenedor-logIn .texto-logIn {
+    width: 100%;
+    padding: 10px 0;
+
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.formulario-logIn {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.formulario-logIn .campo-logIn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-logIn .campo-logIn label {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.formulario-logIn .campo-logIn input {
+    width: 100%;
+    /* padding: 10px; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.formulario-logIn .campo-logIn button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #f8f9fa;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.formulario-logIn .campo-logIn button:hover {
+    background-color: #0056b3;
+}
+
+.contenedor-logIn .inicio-sesion-logIn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

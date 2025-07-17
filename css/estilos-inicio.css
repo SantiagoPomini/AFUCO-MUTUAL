@@ -1,0 +1,216 @@
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+
+/* INICIO SECCION INICIO */
+
+.seccion-inicio {
+    width: 100%;
+    min-height: calc(100vh - var(--header-height, 75px) - var(--footer-height, 50px));
+    padding-bottom: 40px;
+    /* background-image: url("../img/AFUCO_Logo_grande_rojo.jpg");
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-inicio {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    /* background-color: rgba(185, 28, 28, 0.8); */
+    border-radius: 30px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-inicio .titulo-inicio {
+    font-size: 5.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    /* color: #B91C1C; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-inicio .texto-inicio {
+    width: 60%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contenedor-boton-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor-boton-inicio a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.contenedor-boton-inicio .boton-inicio {
+    background-color: #B91C1C;
+    color: #f8f9fa;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.3rem; 
+}
+
+/* se agranda el boton al pasarle el mouse por encima */
+.contenedor-boton-inicio .boton-inicio:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.seccion-inicio .imagen-inicio {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/BannerAfuco.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.imagen-inicio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* FIN SECCION INICIO */
+
+
+
+
+
+
+/* INICIO SECCION PEDIR TURNO */
+
+.seccion-pedir-turno .contenedor-pedir-turno {
+    width: auto;
+    padding: 40px;
+    background-color: #B91C1C;
+    border-radius: 40px;
+
+    color: #f8f9fa;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-pedir-turno .titulo-pedir-turno {
+    font-size: 3.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contenedor-pedir-turno .texto-pedir-turno {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.contenedor-pedir-turno .contenedor-boton-pedir-turno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor-boton-pedir-turno a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.contenedor-boton-pedir-turno .boton-pedir-turno {
+    background-color: #f8f9fa;
+    color: #B91C1C;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.3rem; 
+}
+
+/* se agranda el boton al pasarle el mouse por encima */
+
+.contenedor-boton-pedir-turno .boton-pedir-turno:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* FIN SECCION PEDIR TURNO */
+
+
+/* INICIO SECCION ELEGIRNOS COMO MUTUAL */
+
+
+/* .contenedor-titulo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+.seccion-mutual-elegirnos h1 {
+    font-size: 3rem;
+    color: #B91C1C;
+    margin-bottom: 20px;
+}
+
+.contenedor-beneficios {
+    margin: 20px;
+    width: 65%;
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.beneficio{
+    font-size: 1.1rem;
+    color: #EB2323;
+
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.beneficio:hover{
+    color: #f8f9fa;
+    background-color:#EB2323;
+    border: 1px solid #B91C1C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* FIN SECCION ELEGIRNOS COMO MUTUAL */
