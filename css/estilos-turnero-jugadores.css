@@ -83,7 +83,7 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
 
     /* padding: 20px; */
@@ -91,6 +91,92 @@
     background-color: #f9f9f9;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
+
+/* BOTONES MEDICOS */
+
+:root {
+    --color-boton-radio-medicos: #b43232;
+    --color-boton-radio-medicos: #32b448;
+    --color-boton-radio-medicos: #218d52;
+    --color-boton-radio-medicos: #a32222;
+    
+}
+
+.fondo {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-inputs {
+    position: relative;
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 0.5rem;
+}
+
+.contenedor-inputs input {
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+.contenedor-texto-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* border: 2px solid #355236; */
+    border: 2px solid var(--color-boton-radio-medicos);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contenedor-texto-input i {
+    color: #355236;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.contenedor-texto-input label {
+    color: #355236;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input:checked+.contenedor-texto-input {
+    /* background-color: #355236;
+    box-shadow: 0 0 12px #355236; */
+    background-color: var(--color-boton-radio-medicos);
+    box-shadow: 0 0 12px var(--color-boton-radio-medicos);
+}
+
+input:hover+.contenedor-texto-input {
+    /* box-shadow: 0 0 12px #355236; */
+    box-shadow: 0 0 12px var(--color-boton-radio-medicos);
+}
+
+input:checked+.contenedor-texto-input i,
+input:checked+.contenedor-texto-input label {
+    color: #fff;
+}
+
+
+
+/* FIN BOTONES MEDICOS */
+
 
 .formulario-turno .formulario-selecionable {
     width: 55%;
